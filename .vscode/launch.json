@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "creational/singeleton/singeleton_main.dart"
+            "program": "creational/prototype/prototype_main.dart"
         }
     ]
 }
