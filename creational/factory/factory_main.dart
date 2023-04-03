@@ -6,7 +6,7 @@ import 'credit_card_factory.dart';
 
 void main(List<String> args) {
   // factory pattern is used to seperate object creation from client code to interface that decides which subclass to return
-  // using this patterns lead to more readability and ease of maintainence and extending functionality
+  // using this patterns leads to more readability , ease of maintainence, and extending functionality
 
   print('Enter your Card number: ');
 
