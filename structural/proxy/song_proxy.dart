@@ -1,7 +1,7 @@
 import 'song.dart';
 import 'song_model.dart';
 
-class SongProxy {
+class SongProxy extends Song {
   Song? _song;
 
   Map<String, int> _playedCount = Map<String, int>();
