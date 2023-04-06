@@ -3,7 +3,7 @@ import 'manager_operator.dart';
 import 'salary_calculator.dart';
 
 void main(List<String> args) {
-  // adapter pattern is a pattern that interact to incompatible interfaces together
+  // adapter pattern is a pattern that interact two incompatible interfaces together
 
   ManagerOperator operator = ManagerOperator(
       baseSalary: 1000, name: 'Mohamed', id: 12, sector: 'Maintenance');

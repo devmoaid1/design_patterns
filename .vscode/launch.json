@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "structural/adapter/adapter_main.dart"
+            "program": "structural/facade/facade_main.dart"
         }
     ]
 }
