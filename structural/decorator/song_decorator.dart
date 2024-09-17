@@ -5,6 +5,5 @@ import '../proxy/song_proxy.dart';
 
 abstract class SongDecorator extends SongProxy {
   late Song _song;
-
-  void setSong(Song song);
+  set song(Song song);
 }

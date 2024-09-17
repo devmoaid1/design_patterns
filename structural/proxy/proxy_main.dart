@@ -12,8 +12,8 @@ void main(List<String> args) {
   // which lead to more maintainable and respect OCD principle
 
   final SongDecorator lyricsDecorator = LyricsDecorator();
-  lyricsDecorator.setSong(
-      songPlayer); // set the proxy that controlls song object and perform controll to the decorator
+  lyricsDecorator.song =
+      songPlayer; // set the proxy that controlls song object and perform controll to the decorator
   for (int i = 0; i < 51; i++) {
     lyricsDecorator.playSong(1, 'without you');
   }

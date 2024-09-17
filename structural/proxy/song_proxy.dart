@@ -11,23 +11,14 @@ class SongProxy extends Song {
       _song = SongModel();
     }
 
-    // dont play song more than 50 times
+    int currentCount = _playedCount[songName] ?? 0;
 
-    if (!_playedCount.containsKey(songName)) {
-      // first time played
-      _playedCount[songName] = 1;
-      _song!.playSong(id, songName);
-    } else {
-      if (_playedCount[songName]! >= 50) {
-        // excceded limit
-        print('exceeded the quota for today');
-      } else {
-        // play song and increment count by one for song
-        _song!.playSong(id, songName);
-        _playedCount.update(songName, (value) {
-          return value + 1;
-        });
-      }
+    if (currentCount >= 50) {
+      // exceeded limit
+      return;
     }
+
+    _playedCount[songName] = currentCount + 1;
+    _song!.playSong(id, songName);
   }
 }

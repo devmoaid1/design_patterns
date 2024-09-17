@@ -6,6 +6,7 @@ import 'song_decorator.dart';
 class LyricsDecorator extends SongDecorator {
   Song? _song;
 
+  set song(Song song) => this._song = song;
   void showLyrics(int id, String songName) {
     print('lyrics are shown for song id : $id and name : $songName');
   }
@@ -18,10 +19,5 @@ class LyricsDecorator extends SongDecorator {
       _song!.playSong(id, songName);
       showLyrics(id, songName);
     }
-  }
-
-  @override
-  void setSong(Song song) {
-    _song = song;
   }
 }
