@@ -1,5 +1,7 @@
 import 'singeleton.dart';
 
+/*The Singleton design pattern is a creational pattern that restricts a class from instantiating multiple objects. 
+It creates a single instance of a class and provides a global point of access to it.*/
 void main(List<String> args) {
   Cart cart1 = Cart.getInstance();
   Cart cart2 = Cart.getInstance();
